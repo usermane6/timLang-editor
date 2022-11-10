@@ -7,7 +7,7 @@ window.geometry("1200x750")
 window.title("Tim")
 
 file_name = tk.StringVar()
-default_file = "IDEtest"
+default_file = "tim"
 # ------------ Functions ------------
 
 def retrieve_code():

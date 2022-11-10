@@ -49,6 +49,12 @@ def turn(*args):
     elif direction == "right":
         tim.right(deg)
 
+def square(*args):
+    length = name_to_int(args[0])
+    for i in range(4):
+        tim.forward(length)
+        tim.left(90)
+
 def jump_to(*args) -> int: 
     val = name_to_int(args[0])
     return val - 1 # line numbers in text editors typically start at 1
@@ -91,6 +97,7 @@ all_commands = {
     "counter": counter,
     "count": count,
     "if": conditional,
+    "square": square,
 }
 
 # ----------- Other Functions -----------
@@ -127,7 +134,7 @@ def run(path : str):
             line_num += 1 
 
         total_lines += 1 
-        print(total_lines)
+        # print(total_lines)
         if total_lines > 1000:
             break  
  

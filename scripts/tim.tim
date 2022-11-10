@@ -1,0 +1,8 @@
+counter 50 size
+counter 0 i
+square size
+count 1 i
+count 10 size
+if i == 10 jump 8
+jump 3
+end
