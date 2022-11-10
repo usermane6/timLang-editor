@@ -16,7 +16,7 @@ def retrieve_code():
 
 def get_file(mode : str):
     name = file_txt.get()
-    path = "timLang/scripts/" + name + ".tim"
+    path = "timLang editor/scripts/" + name + ".tim"
     file = open(path, mode)
     return file, path
 

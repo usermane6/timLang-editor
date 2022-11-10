@@ -1,7 +1,5 @@
 import turtle
 
-file_name = "timLang/scripts/tim.tim"
-
 tim = turtle.Turtle()
 
 # ----------- File Handling -----------
